@@ -29,7 +29,7 @@ button{
     border: none
 }
 
-.welcome, .services-overview{
+.welcome, .services-overview, .visit-us{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -96,17 +96,17 @@ button{
     align-items: center;
 }
 
-.services-overview{
+.services-overview {
     margin-top: -2rem;
     background-color: #F6D2D1;
 }
 
-.services-overview h2{
+.services-overview h2 {
     color: #C39C00;
     margin-bottom: 0;
 }
 
-.services-overview h3{
+.services-overview h3 {
     width: 80%;
     font-family: "Cormorant Infant", serif;
     font-weight: 400;
@@ -131,7 +131,7 @@ button{
     margin: 1rem 0;
 }
 
-.service-name:hover{
+.service-name:hover {
     cursor: pointer;
 }
 
@@ -146,4 +146,13 @@ button{
 .manicure {
     margin-left: -16rem;
     margin-top: -12.5rem;
+}
+
+footer{
+    font-family: "Jost", sans-serif;
+    font-size: 0.8rem;
+    background-color: #D7A7AA;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
 }
