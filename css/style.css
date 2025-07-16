@@ -12,6 +12,7 @@ header{
     align-items: center;
     background-color: #D7A7AA;
     z-index: 100;
+    width: 100%;
 }
 
 #logo{
@@ -28,7 +29,7 @@ button{
     border: none
 }
 
-.welcome{
+.welcome, .services-overview{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -41,7 +42,7 @@ button{
     width: 100%;
 }
 
-.welcome h2{
+.welcome h2, .services-overview h2{
     font-family: "Corinthia", cursive;
     font-weight: 400;
     letter-spacing: 0.1rem;
@@ -53,24 +54,25 @@ button{
     font-family: "Cormorant Infant", serif;
     font-weight: 400;
     font-size: 2rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
     color: #C39C00;
     margin-top: 0;
 }
 
-.carouselSquare{
+.carousel-square{
     position: absolute;
-    margin-top: -5.5rem;
-    width: 9.8rem;
+    margin-top: -5rem;
+    width: 10.2rem;
     height: 15.8rem;
     background-color: #E8CDCC;
-    border-radius: 3rem;
+    border-radius: 2rem;
     border: 2px solid white;
 }
 
 .welcomeImg{
     position: relative;
     width: 13rem;
+    height: 14rem;
     border-radius: 3rem;
     margin-top: 1rem;
     z-index: 1;
@@ -83,10 +85,65 @@ button{
     margin: 3rem auto;
 }
 
-.welcome-p1{
-    padding-top: 1rem;
-}
-
 .welcome p+p{
     margin-top: -1.5rem;
+}
+
+.service-categories, .service1, .service2, .service3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-overview{
+    margin-top: -2rem;
+    background-color: #F6D2D1;
+}
+
+.services-overview h2{
+    color: #C39C00;
+    margin-bottom: 0;
+}
+
+.services-overview h3{
+    width: 80%;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: -0.2rem;
+}
+
+.circle {
+    position: relative;
+    background-color: #FFFFFF;
+    filter: drop-shadow(2px 5px 3px #a67578);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 4rem;
+}
+
+.service-name {
+    font-family: "Jost", sans-serif;
+    color: white;
+    background-color: #D7A7AA;
+    padding: 0.3rem 1.5rem;
+    margin: 1rem 0;
+}
+
+.service-name:hover{
+    cursor: pointer;
+}
+
+.manicure, .pedicure, .wax {
+    scale: 0.15;
+    position: relative;
+    position: absolute;
+    z-index: 2;
+    margin-top: -3.3rem;
+}
+
+.manicure {
+    margin-left: -16rem;
+    margin-top: -12.5rem;
 }
