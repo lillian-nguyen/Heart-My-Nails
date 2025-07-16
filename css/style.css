@@ -3,7 +3,7 @@ body{
 }
 
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 6rem;
@@ -11,6 +11,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: #D7A7AA;
+    z-index: 100;
 }
 
 #logo{
@@ -59,9 +60,9 @@ button{
 
 .carouselSquare{
     position: absolute;
-    margin-top: -4.5rem;
-    width: 9.5rem;
-    height: 17rem;
+    margin-top: -5.5rem;
+    width: 9.8rem;
+    height: 15.8rem;
     background-color: #E8CDCC;
     border-radius: 3rem;
     border: 2px solid white;
@@ -80,6 +81,10 @@ button{
     letter-spacing: 0.01rem;
     width: 85%;
     margin: 3rem auto;
+}
+
+.welcome-p1{
+    padding-top: 1rem;
 }
 
 .welcome p+p{
