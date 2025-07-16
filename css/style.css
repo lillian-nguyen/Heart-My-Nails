@@ -42,7 +42,7 @@ button{
     width: 100%;
 }
 
-.welcome h2, .services-overview h2{
+.welcome h2, .services-overview h2, .contact h2{
     font-family: "Corinthia", cursive;
     font-weight: 400;
     letter-spacing: 0.1rem;
@@ -89,7 +89,7 @@ button{
     margin-top: -1.5rem;
 }
 
-.service-categories, .service1, .service2, .service3{
+.service-categories, .service1, .service2, .service3, .contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,12 +101,11 @@ button{
     background-color: #F6D2D1;
 }
 
-.services-overview h2 {
+.services-overview h2, .contact h2, .contact h3+h3 {
     color: #C39C00;
-    margin-bottom: 0;
 }
 
-.services-overview h3 {
+.services-overview h3, .contact h3 {
     width: 80%;
     font-family: "Cormorant Infant", serif;
     font-weight: 400;
@@ -146,6 +145,29 @@ button{
 .manicure {
     margin-left: -16rem;
     margin-top: -12.5rem;
+}
+
+.contact h3, .contact p{
+    font-family: "Jost", sans-serif;
+    text-align: center;
+}
+
+.contact h3+h3{
+    font-family: "Cormorant Infant", serif;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.contact p{
+    margin-bottom: 0;
+}
+
+.contact p+p{
+    margin-top: 0.3rem;
+}
+
+iframe{
+    padding-top: 1rem;
 }
 
 footer{
