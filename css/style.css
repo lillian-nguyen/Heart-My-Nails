@@ -1,0 +1,87 @@
+body{
+    background-color: #FFEBEB;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D7A7AA;
+}
+
+#logo{
+    width: 168;
+}
+
+#hamburger{
+    scale: 0.35;
+    padding-left: 3rem;
+}
+
+button{
+    background-color: transparent;
+    border: none
+}
+
+.welcome{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 6rem;
+    text-align: center;
+    color: #552611;
+    width: 100%;
+}
+
+.welcome h2{
+    font-family: "Corinthia", cursive;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.welcome h1{
+    font-family: "Cormorant Infant", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: #C39C00;
+    margin-top: 0;
+}
+
+.carouselSquare{
+    position: absolute;
+    margin-top: -4.5rem;
+    width: 9.5rem;
+    height: 17rem;
+    background-color: #E8CDCC;
+    border-radius: 3rem;
+    border: 2px solid white;
+}
+
+.welcomeImg{
+    position: relative;
+    width: 13rem;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    z-index: 1;
+}
+
+.welcome p{
+    font-family: "Jost", sans-serif;
+    letter-spacing: 0.01rem;
+    width: 85%;
+    margin: 3rem auto;
+}
+
+.welcome p+p{
+    margin-top: -1.5rem;
+}
