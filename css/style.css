@@ -147,6 +147,10 @@ button{
     margin-top: -12.5rem;
 }
 
+.service3{
+    padding-bottom: 1.5rem;
+}
+
 .contact h3, .contact p{
     font-family: "Jost", sans-serif;
     text-align: center;
@@ -154,8 +158,13 @@ button{
 
 .contact h3+h3{
     font-family: "Cormorant Infant", serif;
+    font-size: 1.3rem;
     padding-top: 1rem;
     margin: 0;
+}
+
+.days{
+    margin-top: -0.7rem;
 }
 
 .contact p{
@@ -167,7 +176,11 @@ button{
 }
 
 iframe{
-    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.address{
+    padding-bottom: 0.4rem;
 }
 
 footer{
