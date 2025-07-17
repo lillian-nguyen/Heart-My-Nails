@@ -122,7 +122,7 @@ button{
     border-radius: 4rem;
 }
 
-.service-name {
+.serviceName {
     font-family: "Jost", sans-serif;
     color: white;
     background-color: #D7A7AA;
@@ -130,7 +130,7 @@ button{
     margin: 1rem 0;
 }
 
-.service-name:hover {
+.serviceName:hover {
     cursor: pointer;
 }
 
@@ -149,6 +149,15 @@ button{
 
 .service3{
     padding-bottom: 1.5rem;
+}
+
+.clickedServiceButton{
+    background-color: black;
+    color: #EFBF04;
+}
+
+.contact{
+    background-color: #F6D2D1;
 }
 
 .contact h3, .contact p{
@@ -180,7 +189,7 @@ iframe{
 }
 
 .address{
-    padding-bottom: 0.4rem;
+    padding-bottom: 1rem;
 }
 
 footer{
@@ -189,5 +198,4 @@ footer{
     background-color: #D7A7AA;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 1rem;
 }
