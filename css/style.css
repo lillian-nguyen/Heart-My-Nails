@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #FFEBEB;
 }
@@ -147,6 +151,11 @@ button{
     margin-top: -12.5rem;
 }
 
+.bottle{
+    scale: 0.4;
+    position: absolute;
+}
+
 #enhancementsButton{
     font-size: 0.95rem;
     padding: 0.4rem 1.2rem;
@@ -177,6 +186,33 @@ button{
 .services-expanded p{
     font-style: italic;
     margin-top: -0.6rem;
+}
+
+#manicureContainer, #enhancementsContainer{
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    width: 80%;
+    border: 3px double #D7A7AA;
+    scroll-margin-top: 100px;
+}
+
+.basicManiDescription, .deluxeManiDescription, .gelHeader, .gelDescription{
+    width: 75%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.gelHeader{
+    padding: 1.3rem 0;
+}
+
+.kidsMani{
+    margin-top: -1rem;
+}
+
+.kidsManiH4{
+    width: 50%;
 }
 
 .contact{
