@@ -184,7 +184,7 @@ button{
 .service-row{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .services-expanded p{
@@ -192,7 +192,7 @@ button{
     margin-top: -0.6rem;
 }
 
-#manicureContainer, #enhancementsContainer{
+#manicureContainer, #enhancementsContainer, #pedicureContainer{
     background-color: #FFFFFF;
     margin: 0 auto;
     margin-top: 0.5rem;
@@ -220,7 +220,11 @@ button{
 }
 
 .ombreHeader{
-    margin-left: -2rem;
+    margin-left: -0.8rem;
+}
+
+.kidsPediH4{
+    width: 65%;
 }
 
 .contact{
