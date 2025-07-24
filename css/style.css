@@ -42,7 +42,7 @@ button{
     width: 100%;
 }
 
-.welcome h2, .services-overview h2, .contact h2{
+.welcome h2, .services-overview h2, .services-expanded h2, .contact h2{
     font-family: "Corinthia", cursive;
     font-weight: 400;
     letter-spacing: 0.1rem;
@@ -101,7 +101,7 @@ button{
     background-color: #F6D2D1;
 }
 
-.services-overview h2, .contact h2, .contact h3+h3 {
+.services-overview h2, .contact h2, .services-expanded h2, .contact h3+h3 {
     color: #C39C00;
 }
 
@@ -159,6 +159,24 @@ button{
 .clickedServiceButton{
     background-color: black;
     color: #EFBF04;
+}
+
+.services-expanded{
+    display: flex;
+    flex-direction: column;
+    font-family: "Jost", sans-serif;
+    text-align: center;
+}
+
+.service-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.services-expanded p{
+    font-style: italic;
+    margin-top: -0.6rem;
 }
 
 .contact{
