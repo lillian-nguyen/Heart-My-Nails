@@ -32,17 +32,23 @@ const hamburgerMenu = document.getElementById('hamburger');
 const expandedNav = document.getElementById('expandedNav');
 let navOpen = false;
 
-// expandedNav.style.visibility = 'hidden';
-// hamburgerMenu.addEventListener('click', toggleMobileMenu);
-
-// function toggleMobileMenu(event){
-//     navOpen ? expandedNav.style.visibility = 'hidden' : expandedNav.style.visibility = 'visible';
-
-//     navOpen = !navOpen;
-// }
-
 hamburgerMenu.addEventListener('click', () => {
     navOpen = !navOpen;
     expandedNav.classList.toggle('open', navOpen);
 })
 
+
+// make expanded menu links change color onclick 
+
+let expandedLinks = document.querySelectorAll('.expandedLink');
+expandedLinks.forEach(link => link.addEventListener('click', revertColorCloseMenu));
+
+function revertColorCloseMenu(event){
+    event.target.classList.add('activeExpandedLink');
+    setTimeout(() => {
+        event.target.classList.remove('activeEspandedLink');
+        event.target.style.color = 'black';
+        expandedNav.classList.remove('open');
+        navOpen = false;
+    }, 300);
+}

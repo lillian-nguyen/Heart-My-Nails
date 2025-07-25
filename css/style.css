@@ -67,6 +67,10 @@ button{
     opacity: 1;
 }
 
+.activeExpandedLink{
+    color: white;
+}
+
 .welcome, .services-overview, .visit-us{
     position: relative;
     display: flex;
