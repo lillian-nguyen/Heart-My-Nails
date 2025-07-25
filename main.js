@@ -13,7 +13,9 @@ function redirectServices(event){
 // carousel effect for welcome images 
 const rotatingImages = [
     '/assets/nailsBehindHead.jpg',
-    '/assets/blueDressNails.jpg'
+    '/assets/blueDressNails.jpg',
+    '/assets/mauveNails.jpg',
+    '/assets/salmonbg.jpg'
 ];
 
 let index = 0;
@@ -23,4 +25,6 @@ setInterval(() => {
 
     index = (index + 1) % rotatingImages.length;
     carouselImage.src = rotatingImages[index];
-}, 3000);
+}, 2500);
+
+// mobile navigation menu
