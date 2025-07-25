@@ -27,4 +27,4 @@ setInterval(() => {
     carouselImage.src = rotatingImages[index];
 }, 2500);
 
-// mobile navigation menu
+// mobile navigation menu - expands / contracts after clicking hamburger menu
