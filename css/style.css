@@ -56,6 +56,17 @@ button{
     color: black;
 }
 
+#expandedNav {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#expandedNav.open{
+    visibility: visible;
+    opacity: 1;
+}
+
 .welcome, .services-overview, .visit-us{
     position: relative;
     display: flex;
@@ -67,6 +78,17 @@ button{
     text-align: center;
     color: #552611;
     width: 100%;
+}
+
+.anchor-spacer {
+    position: relative;
+    top: -100px;  /* amount of scroll offset you want */
+    height: 0;
+    visibility: hidden;
+  }  
+
+#contactUs{
+    scroll-margin-top: 50px;
 }
 
 .welcome h2, .services-overview h2, .services-expanded h2, .contact h2{
@@ -300,4 +322,9 @@ footer{
     background-color: #D7A7AA;
     text-align: center;
     padding: 1rem 0;
+}
+
+footer p{
+    width: 85%;
+    margin: 0 auto;
 }

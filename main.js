@@ -28,3 +28,21 @@ setInterval(() => {
 }, 2500);
 
 // mobile navigation menu - expands / contracts after clicking hamburger menu
+const hamburgerMenu = document.getElementById('hamburger');
+const expandedNav = document.getElementById('expandedNav');
+let navOpen = false;
+
+// expandedNav.style.visibility = 'hidden';
+// hamburgerMenu.addEventListener('click', toggleMobileMenu);
+
+// function toggleMobileMenu(event){
+//     navOpen ? expandedNav.style.visibility = 'hidden' : expandedNav.style.visibility = 'visible';
+
+//     navOpen = !navOpen;
+// }
+
+hamburgerMenu.addEventListener('click', () => {
+    navOpen = !navOpen;
+    expandedNav.classList.toggle('open', navOpen);
+})
+
