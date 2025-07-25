@@ -224,6 +224,7 @@ button{
     flex-direction: column;
     font-family: "Jost", sans-serif;
     text-align: center;
+    background-color: #F6D2D1;
 }
 
 .services-expanded h2{
@@ -282,10 +283,6 @@ button{
 
 #waxingContainer{
     margin-bottom: 2rem;
-}
-
-.contact{
-    background-color: #F6D2D1;
 }
 
 .contact h3, .contact p{
