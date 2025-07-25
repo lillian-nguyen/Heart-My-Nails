@@ -196,7 +196,7 @@ button{
     margin-top: -0.6rem;
 }
 
-#manicureContainer, #enhancementsContainer, #pedicureContainer, #additionalContainer{
+#manicureContainer, #enhancementsContainer, #pedicureContainer, #additionalContainer, #waxingContainer{
     background-color: #FFFFFF;
     margin: 0 auto;
     margin-top: 0.5rem;
@@ -229,6 +229,14 @@ button{
 
 .kidsPediH4{
     width: 65%;
+}
+
+.waxRow{
+    margin-top: -2rem;
+}
+
+#waxingContainer{
+    margin-bottom: 2rem;
 }
 
 .contact{
