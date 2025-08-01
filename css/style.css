@@ -37,6 +37,10 @@ button{
     border: none
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .expandedMobileNav{
     position: fixed;
     top: 6rem;
@@ -232,83 +236,117 @@ button{
     padding-bottom: 1.5rem;
 }
 
-.clickedServiceButton, button:hover{
+.clickedServiceButton, .serviceName:hover{
     background-color: rgb(187, 36, 87);
 }
 
 .services-expanded{
-    display: flex;
-    flex-direction: column;
-    font-family: "Jost", sans-serif;
-    text-align: center;
-    background-color: #F6D2D1;
+    background-color: #FFEBEB;
+}
+
+.services-expanded .container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .services-expanded h2{
     text-align: center;
+    padding-bottom: 1rem;
 }
 
-.service-row{
+.services-grid{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
+    flex-direction: column;
+    gap: 1.1rem;
 }
 
-.services-expanded p{
+.service-category{
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    border: 3px solid #D7A7AA;
+}
+
+.service-category h3{
+    font-size: 1.5rem;
+    color: #552611;
+    text-align: center
+}
+
+.service-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.service-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #F6D2D1;
+}
+
+.service-item h4{
+    color: #552611;
+    /* text-align: left; */
+    margin: 0;
+}
+
+.service-item p{
+    font-size: 1rem;
+    color: #6b7280;
     font-style: italic;
-    margin-top: -0.6rem;
+    margin-top: 0.25rem;
 }
 
-#manicureContainer, #enhancementsContainer, #pedicureContainer, #additionalContainer, #waxingContainer{
-    background-color: #FFFFFF;
-    margin: 0 auto;
+.service-item .price {
+    font-size: 1.25rem;
+    color: #C39C00;
     margin-top: 0.5rem;
-    width: 86%;
-    border: 3px double #D7A7AA;
-    scroll-margin-top: 100px;
 }
 
-.basicManiDescription, .deluxeManiDescription, .gelHeader, .gelDescription{
-    width: 75%;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.gelDescription p {
+.service-details{
     display: flex;
+    flex-direction: column;
+}
+
+.service-details .service-details-subitem {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+.service-details .item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
 }
 
-.gelHeader{
-    padding: 1.3rem 0;
-}
+.service-details .item p {
+    margin: 0;
+  }
 
-.kidsMani{
-    margin-top: -1rem;
-}
+  .service-details h4 {
+    margin-bottom: 0.5rem;
+  }
 
-.kidsManiH4{
-    width: 56%;
-}
+  .services-grid .service-category:last-child {
+    margin-bottom: 0;
+  }
 
-.kidsPediH4{
-    width: 65%;
-}
-
-.waxRow{
-    width: 60%;
-    margin-top: -2rem;
-}
-
-#waxingContainer{
-    margin-bottom: 2rem;
-}
-
-#waxingContainer h2{
-    padding-bottom: 1.2rem;
-}
+  .service-item:last-child{
+    border: none;
+  }
+/* contact section */
 
 .contact h3, .contact p{
     font-family: "Jost", sans-serif;
@@ -406,3 +444,35 @@ footer p{
 } */
 
 /* 1024 ipad */
+
+@media (min-width: 640px) {
+    .services-expanded .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    .service-item {
+      flex-direction: row;
+      align-items: center;
+    }
+    .service-item .price {
+      margin-top: 0;
+    }
+    .service-details .item {
+      flex-direction: row;
+      align-items: center;
+    }
+    .service-details .item .price {
+      margin-top: 0;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .services-expanded .container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
