@@ -172,7 +172,7 @@ button{
     background-color: #F6D2D1;
 }
 
-.services-overview h2, .contact h2, .services-expanded h2, .contact h3+h3 {
+.services-overview h2, .contact h2, .services-expanded h2, .contact h3+h3, .goldPrices {
     color: #C39C00;
 }
 
@@ -348,7 +348,7 @@ footer p{
     margin: 0 auto;
 }
 
-@media (min-width: 460px){
+/* @media (min-width: 460px){
      .carousel-square{
         margin-top: -2.5rem;
      }
@@ -359,16 +359,6 @@ footer p{
         margin-top: -1.5rem;
     }
 
-}
-
-/* .carousel-square{
-    position: absolute;
-    margin-top: -3.5rem;
-    width: 10.2rem;
-    height: 15.8rem;
-    background-color: #E8CDCC;
-    border-radius: 2rem;
-    border: 2px solid white;
 } */
 
 /* 1024 ipad */
