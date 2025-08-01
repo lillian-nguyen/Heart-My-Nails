@@ -1,13 +1,18 @@
-// make serviceName colors change onclick 
+// make serviceName colors change onclick (for active class)
 let serviceButtons = document.querySelectorAll('.serviceName');
-serviceButtons.forEach(button => button.addEventListener('click', redirectServices))
+serviceButtons.forEach(button => button.addEventListener('click', loadServices))
 
-//revert back to original button color
-function redirectServices(event){
-    event.target.classList.add('clickedServiceButton')
-    setTimeout(() => {
-        event.target.classList.remove('clickedServiceButton');
-    }, 1000)
+function loadServices(event){
+
+    let currentActiveElement = document.querySelector('.activeService');
+
+    if (currentActiveElement){
+        currentActiveElement.classList.remove('activeService')
+    };
+    
+    event.target.classList.add('activeService');
+   
+    // show/hide corresponding expanded menu list
 }
 
 // carousel effect for welcome images 

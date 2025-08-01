@@ -164,7 +164,46 @@ button:hover{
     padding-bottom: 3rem;
 }
 
-.service-categories, .service1, .service2, .service3, .service4, .contact{
+/* services revamp */
+
+.services-overview {
+    margin-top: -2rem;
+    background-color: #F6D2D1;
+}
+
+.services-overview h2, .contact h2, .services-expanded h2, .contact h3+h3 {
+    color: rgb(187, 36, 87)
+}
+
+.services-overview h3, .contact h3 {
+    width: 80%;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: -0.2rem;
+}
+
+.service-selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.3rem 1.8rem 1rem 2rem;
+    border-left: 2px double white;
+    margin-bottom: 1.5rem;
+}
+
+.service-selection button {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    color: #552611;
+    padding: 0.2rem 0.2rem;
+}
+
+.service-selection .activeService{
+    color: rgb(187, 36, 87);
+}
+
+/* .service-categories, .service1, .service2, .service3, .service4, .contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,11 +277,7 @@ button:hover{
 
 .clickedServiceButton, .serviceName:hover{
     background-color: rgb(187, 36, 87);
-}
-
-.services-expanded{
-    background-color: #FFEBEB;
-}
+} */
 
 .services-expanded .container{
     max-width: 1280px;
@@ -293,7 +328,6 @@ button:hover{
 
 .service-item h4{
     color: #552611;
-    /* text-align: left; */
     margin: 0;
     font-size: 1.2rem;
 }
@@ -356,6 +390,14 @@ button:hover{
   }
 /* contact section */
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEBEB
+}
+
 .contact h2{
     padding-bottom: 0;
 }
@@ -398,6 +440,7 @@ footer{
     background-color: #D7A7AA;
     text-align: center;
     padding: 1rem 0;
+    width: 100%;
 }
 
 footer p{
