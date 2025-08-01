@@ -53,7 +53,7 @@ button{
 .expandedMobileNav a {
     padding-bottom: 1rem;
     font-family: "Jost", sans-serif;
-    color: black;
+    color: white;
 }
 
 #expandedNav {
@@ -67,8 +67,8 @@ button{
     opacity: 1;
 }
 
-.activeExpandedLink{
-    color: white;
+.expandedLink:hover{
+    color: rgb(187, 36, 87);
 }
 
 .welcome, .services-overview, .visit-us{
@@ -112,34 +112,52 @@ button{
     margin-top: 0;
 }
 
-.carousel-square{
-    position: absolute;
-    margin-top: -3.5rem;
-    width: 10.2rem;
-    height: 15.8rem;
-    background-color: #E8CDCC;
-    border-radius: 2rem;
-    border: 2px solid white;
+.imgCarousel{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1rem; 
+    width: 15rem;
+    height: 15rem;
 }
 
-.welcomeImg{
-    position: relative;
-    width: 13rem;
-    height: 14rem;
-    border-radius: 3rem;
-    margin-top: 1rem;
+.carousel-square{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: -1rem;
+    background-color: #E8CDCC;
+    border-radius: 2rem;
+    border: 2px double white;
+}
+
+#carouselImage{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 2%;
+    left: 8%;
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
     z-index: 1;
+    border-radius: 0.8rem;
+}
+
+#carouselImage.fade-in{
+    opacity: 1;
 }
 
 .welcome p{
     font-family: "Jost", sans-serif;
     letter-spacing: 0.01rem;
     width: 85%;
-    margin: 3rem auto;
+    margin: 0.6rem auto;
 }
 
 .welcome p+p{
-    margin-top: -1.5rem;
+    margin-top: 0.3rem;
+    padding-bottom: 3rem;
 }
 
 .service-categories, .service1, .service2, .service3, .service4, .contact{
@@ -246,7 +264,7 @@ button{
     background-color: #FFFFFF;
     margin: 0 auto;
     margin-top: 0.5rem;
-    width: 80%;
+    width: 86%;
     border: 3px double #D7A7AA;
     scroll-margin-top: 100px;
 }
@@ -329,3 +347,28 @@ footer p{
     width: 85%;
     margin: 0 auto;
 }
+
+@media (min-width: 460px){
+     .carousel-square{
+        margin-top: -2.5rem;
+     }
+}
+
+@media (min-width: 538px){
+    .carousel-square{
+        margin-top: -1.5rem;
+    }
+
+}
+
+/* .carousel-square{
+    position: absolute;
+    margin-top: -3.5rem;
+    width: 10.2rem;
+    height: 15.8rem;
+    background-color: #E8CDCC;
+    border-radius: 2rem;
+    border: 2px solid white;
+} */
+
+/* 1024 ipad */

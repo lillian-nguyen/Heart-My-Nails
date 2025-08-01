@@ -21,10 +21,23 @@ const rotatingImages = [
 let index = 0;
 const carouselImage = document.getElementById('carouselImage');
 
+// set initial img & trigger fade-in
+carouselImage.src = rotatingImages[index];
+carouselImage.classList.add('fade-in');
+
 setInterval(() => {
 
-    index = (index + 1) % rotatingImages.length;
-    carouselImage.src = rotatingImages[index];
+    carouselImage.classList.remove('fade-in');
+
+    // index = (index + 1) % rotatingImages.length;
+    // carouselImage.src = rotatingImages[index];
+
+    setTimeout(() => {
+        index = (index + 1) % rotatingImages.length;
+        carouselImage.src = rotatingImages[index];
+
+        carouselImage.classList.add('fade-in');
+    }, 1000);
 }, 2500);
 
 // mobile navigation menu - expands / contracts after clicking hamburger menu
