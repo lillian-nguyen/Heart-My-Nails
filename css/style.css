@@ -252,7 +252,9 @@ button{
 .service-row{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .services-expanded p{
@@ -275,6 +277,11 @@ button{
     text-align: left;
 }
 
+.gelDescription p {
+    display: flex;
+    justify-content: space-between;
+}
+
 .gelHeader{
     padding: 1.3rem 0;
 }
@@ -284,11 +291,7 @@ button{
 }
 
 .kidsManiH4{
-    width: 50%;
-}
-
-.ombreHeader{
-    margin-left: -0.8rem;
+    width: 56%;
 }
 
 .kidsPediH4{
@@ -296,11 +299,16 @@ button{
 }
 
 .waxRow{
+    width: 60%;
     margin-top: -2rem;
 }
 
 #waxingContainer{
     margin-bottom: 2rem;
+}
+
+#waxingContainer h2{
+    padding-bottom: 1.2rem;
 }
 
 .contact h3, .contact p{
