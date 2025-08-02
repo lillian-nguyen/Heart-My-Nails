@@ -64,21 +64,21 @@
 
     <div id="services-overview-anchor" class="anchor-spacer"></div>
 
-    <section class="services-overview" id="servicesOverview">
+    <section class="services" id="servicesContainer">
       <h2>Our Services</h2>
       <div class="service-selection">
         <button class="serviceName activeService" id="manicures">Manicures</button>
-        <button class="serviceName">Pedicures</button>
-        <button class="serviceName">Nail Enhancements</button>
-        <button class="serviceName">Waxing Services</button>
-        <button class="serviceName">Additional Services</button>
+        <button class="serviceName" id="pedicures">Pedicures</button>
+        <button class="serviceName" id="nailEnhancements">Nail Enhancements</button>
+        <button class="serviceName" id="waxingServices">Waxing Services</button>
+        <button class="serviceName" id="additionalServices">Additional Services</button>
       </div>
 
       <section class="services-expanded">
         <div class="container">
           <div class="services-grid">
   
-            <section id="manicureContainer" class="service-category">
+            <section id="manicureContainer" class="service-category activeCategory">
               <h3>Manicures</h3>
               <ul class="service-list">
                 <li class="service-item">
@@ -126,397 +126,288 @@
                 </li>
               </ul>
             </section>
+
+            <section id="enhancementsContainer" class="service-category">
+              <h3>Nail Enhancements</h3>
+  
+              <ul class="service-list">
+                <li class="service-item">
+                  <div class="service-details">
+                    <h4>Acrylic Nail</h4>
+                    <div class="service-details-subitem">
+                      <p>Full Set</p>
+                      <span class="price">$40+</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Refill</p>
+                      <span class="price">$30+</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Cut Down</p>
+                      <span class="price">$3</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Polish on Acrylic</p>
+                      <span class="price">$15</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Coffin/Stiletto/Almond Shape</p>
+                      <span class="price">$5+</span>
+                    </div>
+                  </div>
+                </li>
+  
+                <li class="service-item">
+                  <div class="service-details">
+                    <h4>Solar Pink & White</h4>
+                    <div class="service-details-subitem">
+                      <p>Solar Full Set</p>
+                      <span class="price">$60+</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Solar Refill</p>
+                      <span class="price">$60+</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Solar Pink Fill-In Set</p>
+                      <span class="price">$50+</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Pink Refill</p>
+                      <span class="price">$40+</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-details">
+                    <div class="same-line">
+                      <h4>Dip</h4>
+                    <span class="price">$50+</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>W/ Tip</p>
+                      <span class="price">$55+</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-details">
+                    <div class="same-line">
+                      <h4>Ombre</h4>
+                      <span class="price">$60+</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+
+            <section id="pedicureContainer" class="service-category">
+              <h3>Pedicures</h3>
+              <ul class="service-list">
+                <li class="service-item">
+                  <div class="service-details">
+                    <div class="same-line">
+                      <h4>Basic Pedicure</h4>
+                      <span class="price">$37</span>
+                    </div>
+                    <p>
+                      Foot soak, Nail shaping, Cuticle care, Pumice foot scrub
+                    </p>
+                    <div class="service-details-subitem">
+                      <p>Sub gel polish</p>
+                      <span class="price">$27</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Add sea salt</p>
+                      <span class="price">$3</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Add butter lotion</p>
+                      <span class="price">$5</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Add hot stone</p>
+                      <span class="price">$5</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Add paraffin wax</p>
+                      <span class="price">$8</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-details">
+                    <div class="same-line">
+                      <h4>Deluxe Pedicure</h4>
+                      <span class="price">$50</span>
+                    </div>
+                    <p>
+                      Basic pedicure + sugar scrub, massage, foot mask with
+                      cooling gel, paraffin wax
+                    </p>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-details">
+                    <div class="same-line">
+                      <h4>Crystal Pedicure</h4>
+                      <span class="price">$55</span>
+                    </div>
+                    <p>
+                      Deluxe pedicure + purifying spa mask, paraffin wax, hot
+                      stone massage, butter lotion
+                    </p>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-details">
+                    <div class="same-line">
+                      <h4>Gentleman's pedicure</h4>
+                      <span class="price">$40</span>
+                    </div>
+                    <p>Basic pedicure with sea salt + massage</p>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-details">
+                    <div class="same-line">
+                      <h4>Little Kids Pedicure</h4>
+                      <span class="price">$20+</span>
+                    </div>
+                    <p>10 & under</p>
+                  </div>
+                </li>
+              </ul>
+            </section>
+  
+            <section id="additionalContainer" class="service-category">
+              <h3>Additional Services</h3>
+              <ul class="service-list">
+                <li class="service-item">
+                  <div class="service-details">
+                    <div class="same-line">
+                      <h4>Polish change (hands)</h4>
+                      <span class="price">$17</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-details">
+                    <div class="same-line">
+                      <h4>Polish change (toes)</h4>
+                      <span class="price">$20</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-details">
+                    <div class="same-line">
+                      <h4>Gel Polish Change (toes)</h4>
+                      <span class="price">$30</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>French / American</p>
+                      <span class="price">$7</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Soak/ take-off</p>
+                      <span class="price">$15</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Paraffin Wax</p>
+                      <span class="price">$8</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Butter lotion</p>
+                      <span class="price">$5</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Gel removal</p>
+                      <span class="price">$5</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Gel coating</p>
+                      <span class="price">$5</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Cut down</p>
+                      <span class="price">$3+</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Toe cut down</p>
+                      <span class="price">$10</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Repair</p>
+                      <span class="price">$3+</span>
+                    </div>
+                    <div class="service-details-subitem">
+                      <p>Matte Topcoat</p>
+                      <span class="price">$1</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+  
+            <section id="waxingContainer" class="service-category">
+              <h3>Waxing Services</h3>
+              <ul class="service-list">
+                <li class="service-item">
+                  <div class="same-line">
+                    <h4>Eyebrows</h4>
+                    <span class="price">$13</span>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="same-line">
+                    <h4>Lip</h4>
+                    <span class="price">$10</span>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="same-line">
+                    <h4>Chin</h4>
+                    <span class="price">$15+</span>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="same-line">
+                    <h4>Full Face</h4>
+                    <span class="price">$40+</span>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="same-line">
+                    <h4>Arms</h4>
+                    <span class="price">$25+</span>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="same-line">
+                    <h4>Underarm</h4>
+                    <span class="price">$25+</span>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="same-line">
+                    <h4>Legs</h4>
+                    <span class="price">$40+</span>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="same-line">
+                    <h4>Back</h4>
+                    <span class="price">$60+</span>
+                  </div>
+                </li>
+              </ul>
+            </section>
             </div>
             </div>
     </section>
 
-      <!-- <section class="service-categories">
-        <a href="#manicureContainer">
-          <div class="service1">
-            <div class="circle">
-              <img
-                src="/assets/manicure.png"
-                alt="manicure"
-                class="serviceImg manicure"
-              />
-            </div>
-            <button class="serviceName" id="maniButton">MANICURES</button>
-          </div>
-        </a>
-
-        <a href="#enhancementsContainer">
-          <div class="service2">
-            <div class="circle">
-              <img
-                src="/assets/enhancements.png"
-                alt="nail polish bottle"
-                class="serviceImg bottle"
-              />
-            </div>
-
-            <button class="serviceName" id="enhancementsButton">
-              NAIL ENHANCEMENTS
-            </button>
-          </div>
-        </a>
-
-        <a href="#pedicureContainer">
-          <div class="service3">
-            <div class="circle"></div>
-            <img
-              src="/assets/pedicure.png"
-              alt="pedicure"
-              class="serviceImg pedicure"
-            />
-            <button class="serviceName" id="pediButton">PEDICURES</button>
-          </div>
-        </a>
-
-        <a href="#waxingContainer">
-          <div class="service4">
-            <div class="serviceImg circle"></div>
-            <img src="/assets/wax.png" alt="wax" class="wax" />
-            <button class="serviceName" id="waxButton">WAXING SERVICES</button>
-          </div>
-        </a>
-      </section>
-    </section> -->
-
-    <!-- <div id="services-expanded-anchor" class="anchor-spacer"></div>
-
-    <section class="services-expanded" id="servicesExpanded">
-      <div class="container">
-        <h2>Full Services Menu</h2>
-        <div class="services-grid">
-
-          <section id="manicureContainer" class="service-category">
-            <h3>Manicures</h3>
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-details">
-                  <div class="same-line">
-                    <h4>Basic Manicure</h4>
-                    <span class="price">$25</span>
-                  </div>
-                  <p>
-                    Luxury lotion hand massage, Hot towel hand wrap, Nail
-                    shaping, Cuticle Care, Color polish
-                  </p>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-details">
-                  <div class="same-line">
-                    <h4>Deluxe Manicure</h4>
-                    <span class="price">$40</span>
-                  </div>
-                  <p>Basic manicure + Sugar scrub, Paraffin wax</p>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-details">
-                  <h4>Gel</h4>
-                  <div class="service-details-subitem same-line">
-                    <p>Manicure</p>
-                    <span class="price">$40</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Polish Only</p>
-                    <span class="price">$27</span>
-                  </div>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-details">
-                  <div class="same-line">
-                    <h4>Little Kids Polish</h4>
-                    <span class="price">$10-15</span>
-                  </div>
-                  <p>10 & under</p>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <section id="enhancementsContainer" class="service-category">
-            <h3>Nail Enhancements</h3>
-
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-details">
-                  <h4>Acrylic Nail</h4>
-                  <div class="service-details-subitem">
-                    <p>Full Set</p>
-                    <span class="price">$40+</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Refill</p>
-                    <span class="price">$30+</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Cut Down</p>
-                    <span class="price">$3</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Polish on Acrylic</p>
-                    <span class="price">$15</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Coffin/Stiletto/Almond Shape</p>
-                    <span class="price">$5+</span>
-                  </div>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-details">
-                  <h4>Solar Pink & White</h4>
-                  <div class="service-details-subitem">
-                    <p>Solar Full Set</p>
-                    <span class="price">$60+</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Solar Refill</p>
-                    <span class="price">$60+</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Solar Pink Fill-In Set</p>
-                    <span class="price">$50+</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Pink Refill</p>
-                    <span class="price">$40+</span>
-                  </div>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-details">
-                  <div class="same-line">
-                    <h4>Dip</h4>
-                  <span class="price">$50+</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>W/ Tip</p>
-                    <span class="price">$55+</span>
-                  </div>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-details">
-                  <div class="same-line">
-                    <h4>Ombre</h4>
-                    <span class="price">$60+</span>
-                  </div>
-                </div>
-           
-              </li>
-            </ul>
-          </section>
-
-          <section id="pedicureContainer" class="service-category">
-            <h3>Pedicures</h3>
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-details">
-                  <div class="same-line">
-                    <h4>Basic Pedicure</h4>
-                    <span class="price">$37</span>
-                  </div>
-                  <p>
-                    Foot soak, Nail shaping, Cuticle care, Pumice foot scrub
-                  </p>
-                  <div class="service-details-subitem">
-                    <p>Sub gel polish</p>
-                    <span class="price">$27</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Add sea salt</p>
-                    <span class="price">$3</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Add butter lotion</p>
-                    <span class="price">$5</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Add hot stone</p>
-                    <span class="price">$5</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Add paraffin wax</p>
-                    <span class="price">$8</span>
-                  </div>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-details">
-                  <div class="same-line">
-                    <h4>Deluxe Pedicure</h4>
-                    <span class="price">$50</span>
-                  </div>
-                  <p>
-                    Basic pedicure + sugar scrub, massage, foot mask with
-                    cooling gel, paraffin wax
-                  </p>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-details">
-                  <div class="same-line">
-                    <h4>Crystal Pedicure</h4>
-                    <span class="price">$55</span>
-                  </div>
-                  <p>
-                    Deluxe pedicure + purifying spa mask, paraffin wax, hot
-                    stone massage, butter lotion
-                  </p>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-details">
-                  <div class="same-line">
-                    <h4>Gentleman's pedicure</h4>
-                    <span class="price">$40</span>
-                  </div>
-                  <p>Basic pedicure with sea salt + massage</p>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-details">
-                  <div class="same-line">
-                    <h4>Little Kids Pedicure</h4>
-                    <span class="price">$20+</span>
-                  </div>
-                  <p>10 & under</p>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <section id="additionalContainer" class="service-category">
-            <h3>Additional Services</h3>
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-details">
-                  <div class="same-line">
-                    <h4>Polish change (hands)</h4>
-                    <span class="price">$17</span>
-                  </div>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-details">
-                  <div class="same-line">
-                    <h4>Polish change (toes)</h4>
-                    <span class="price">$20</span>
-                  </div>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-details">
-                  <div class="same-line">
-                    <h4>Gel Polish Change (toes)</h4>
-                    <span class="price">$30</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>French / American</p>
-                    <span class="price">$7</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Soak/ take-off</p>
-                    <span class="price">$15</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Paraffin Wax</p>
-                    <span class="price">$8</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Butter lotion</p>
-                    <span class="price">$5</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Gel removal</p>
-                    <span class="price">$5</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Gel coating</p>
-                    <span class="price">$5</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Cut down</p>
-                    <span class="price">$3+</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Toe cut down</p>
-                    <span class="price">$10</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Repair</p>
-                    <span class="price">$3+</span>
-                  </div>
-                  <div class="service-details-subitem">
-                    <p>Matte Topcoat</p>
-                    <span class="price">$1</span>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <section id="waxingContainer" class="service-category">
-            <h3>Waxing Services</h3>
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="same-line">
-                  <h4>Eyebrows</h4>
-                  <span class="price">$13</span>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="same-line">
-                  <h4>Lip</h4>
-                  <span class="price">$10</span>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="same-line">
-                  <h4>Chin</h4>
-                  <span class="price">$15+</span>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="same-line">
-                  <h4>Full Face</h4>
-                  <span class="price">$40+</span>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="same-line">
-                  <h4>Arms</h4>
-                  <span class="price">$25+</span>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="same-line">
-                  <h4>Underarm</h4>
-                  <span class="price">$25+</span>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="same-line">
-                  <h4>Legs</h4>
-                  <span class="price">$40+</span>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="same-line">
-                  <h4>Back</h4>
-                  <span class="price">$60+</span>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </div>
-      </div> -->
+    <!-- <div id="services-expanded-anchor" class="anchor-spacer"></div> -->
 
     <section class="contact" id="contactUs">
       <h2>Come Visit Us</h2>

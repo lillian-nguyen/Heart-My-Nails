@@ -75,7 +75,7 @@ button:hover{
     color: rgb(187, 36, 87);
 }
 
-.welcome, .services-overview, .visit-us{
+.welcome, .services, .visit-us{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -99,7 +99,7 @@ button:hover{
     scroll-margin-top: 50px;
 }
 
-.welcome h2, .services-overview h2, .services-expanded h2, .contact h2{
+.welcome h2, .services h2, .services-expanded h2, .contact h2{
     font-family: "Corinthia", cursive;
     font-weight: 400;
     letter-spacing: 0.1rem;
@@ -166,16 +166,16 @@ button:hover{
 
 /* services revamp */
 
-.services-overview {
+.services {
     margin-top: -2rem;
     background-color: #F6D2D1;
 }
 
-.services-overview h2, .contact h2, .services-expanded h2, .contact h3+h3 {
+.services h2, .contact h2, .services-expanded h2, .contact h3+h3 {
     color: rgb(187, 36, 87)
 }
 
-.services-overview h3, .contact h3 {
+.services h3, .contact h3 {
     width: 80%;
     font-family: "Cormorant Infant", serif;
     font-weight: 400;
@@ -187,9 +187,10 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0.3rem 1.8rem 1rem 2rem;
+    padding: 0.1rem 1.8rem 1rem 2rem;
     border-left: 2px double white;
     margin-bottom: 1.5rem;
+    margin-top: 1rem;
 }
 
 .service-selection button {
@@ -203,81 +204,9 @@ button:hover{
     color: rgb(187, 36, 87);
 }
 
-/* .service-categories, .service1, .service2, .service3, .service4, .contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#waxingContainer{
+    margin-bottom: 2rem;
 }
-
-.services-overview {
-    margin-top: -2rem;
-    background-color: #F6D2D1;
-}
-
-.services-overview h2, .contact h2, .services-expanded h2, .contact h3+h3 {
-    color: rgb(187, 36, 87)
-}
-
-.services-overview h3, .contact h3 {
-    width: 80%;
-    font-family: "Cormorant Infant", serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-    margin-top: -0.2rem;
-}
-
-.circle {
-    position: relative;
-    background-color: #FFFFFF;
-    filter: drop-shadow(2px 5px 3px #a67578);
-    width: 6rem;
-    height: 6rem;
-    border-radius: 4rem;
-}
-
-.serviceName {
-    font-family: "Jost", sans-serif;
-    color: white;
-    background-color: #D7A7AA;
-    padding: 0.3rem 1.5rem;
-    margin: 1rem 0;
-}
-
-.serviceName:hover {
-    cursor: pointer;
-}
-
-.manicure, .pedicure, .wax, .bottle {
-    scale: 0.15;
-    position: absolute;
-    z-index: 2;
-    margin-top: -3.3rem;
-}
-
-.manicure {
-    margin-left: -16rem;
-    margin-top: -12.5rem;
-}
-
-.bottle{
-    scale: 0.15;
-    left: -13rem;
-    top: -9.5rem;
-}
-
-#enhancementsButton{
-    font-size: 0.95rem;
-    padding: 0.4rem 1.2rem;
-}
-
-.service4{
-    padding-bottom: 1.5rem;
-}
-
-.clickedServiceButton, .serviceName:hover{
-    background-color: rgb(187, 36, 87);
-} */
 
 .services-expanded .container{
     max-width: 1280px;
@@ -303,12 +232,15 @@ button:hover{
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     padding: 1rem;
     border: 3px solid #D7A7AA;
+    margin-bottom: 2rem;
 }
 
 .service-category h3{
-    font-size: 1.5rem;
+    font-family: "Jost", sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 1.6rem;
     color: #552611;
-    text-align: center
+    margin: 0 auto;
 }
 
 .service-list{
@@ -348,12 +280,12 @@ button:hover{
 .service-details{
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .same-line{
     display: flex;
     justify-content: space-between;
-    /* align-content: center; apparently not working bc flex wrap??*/
 }
 
 .service-details .service-details-subitem {
@@ -388,6 +320,11 @@ button:hover{
   .service-item:last-child{
     border: none;
   }
+
+  .showCategory{
+    display: block;
+  }
+
 /* contact section */
 
 .contact{
