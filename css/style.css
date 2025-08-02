@@ -348,11 +348,16 @@ button:hover{
     font-family: "Cormorant Infant", serif;
     font-size: 1.3rem;
     padding-top: 1rem;
-    margin: 0;
+    margin-top: -0.4rem;
+}
+
+.phone, .contact h3+h3{
+    font-weight:500;
 }
 
 .days{
-    margin-top: -0.7rem;
+    margin-top: -1.8rem;
+    padding-bottom: 0.3rem;
 }
 
 .contact p{
