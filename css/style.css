@@ -331,8 +331,12 @@ button:hover{
     display: block;
   }
 
-  .nailShape{
+  .nailShape {
     width: 30%;
+  }
+
+  .gelPolishChange{
+    width: 75%;
   }
 
 /* contact section */
