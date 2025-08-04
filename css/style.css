@@ -331,6 +331,10 @@ button:hover{
     display: block;
   }
 
+  .nailShape{
+    width: 30%;
+  }
+
 /* contact section */
 
 .contact{
