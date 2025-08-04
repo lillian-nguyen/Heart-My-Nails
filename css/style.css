@@ -4,6 +4,7 @@ html{
 
 body{
     background-color: #FFEBEB;
+    background-image: url(/assets/pineapple-cut.png);
 }
 
 a {
@@ -58,6 +59,7 @@ button:hover{
     padding-bottom: 1rem;
     font-family: "Jost", sans-serif;
     color: white;
+    font-size: 1.1rem;
 }
 
 #expandedNav {
@@ -169,6 +171,7 @@ button:hover{
 .services {
     margin-top: -2rem;
     background-color: #F6D2D1;
+    background-image: url(/assets/fabric-of-squares.png);
 }
 
 .services h2, .contact h2, .services-expanded h2, .contact h3+h3 {
@@ -280,7 +283,6 @@ button:hover{
 .service-item .price {
     font-size: 1.2rem;
     color: #C39C00;
-    /* margin-top: 0.5rem; */
 }
 
 .service-details{
@@ -346,6 +348,7 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(/assets/pineapple-cut.png);
     background-color: #FFEBEB
 }
 
@@ -368,6 +371,12 @@ button:hover{
 .phone, .contact h3+h3{
     font-weight:500;
 }
+
+.phone {
+    color: #C39C00;
+}
+
+.contact 
 
 .days{
     margin-top: -1.8rem;
@@ -404,86 +413,72 @@ footer p{
     margin: 0 auto;
 }
 
-/* @media (min-width: 494px){
-    .welcome h2, .services-overview h2, .services-expanded h2, .contact h2{
-        letter-spacing: 0.1rem;
-        font-size: 3.3rem;
-    }
-    
-    .welcome h1{
-        font-size: 2.4rem;
-        letter-spacing: 0.15rem;
-    }
-    
-    .welcome p {
-        width: 80%;
-        font-size: 1.2rem;
+@media (min-width: 510px){
+    .welcome h2, .services h2, .services-expanded h2, .contact h2{
+        font-size: 4rem;
     }
 
-    .services-overview h3, .contact h3 {
-        width: 80%;
+    .welcome h1{
+        font-size: 2.6rem;
+        letter-spacing: 0.15rem;
+    }
+
+    .imgCarousel{
+        width: 17rem;
+        height: 17rem;
+        margin-top: 0.2rem;
+    }
+
+    .carousel-square{
+        border-radius: 1.5rem;
+    }
+    
+    #carouselImage{
+        top: -0.5%;
+        left: 6%;
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        z-index: 1;
+        border-radius: 0.8rem;
+    }
+
+    .welcome p, .contact h3, .days{
         font-size: 1.3rem;
     }
 
-    .serviceName {
-        padding: 0.5rem 1.3rem;
-        margin: 1rem 0;
-        font-size: 1.1rem;
+    .expandedMobileNav a{
+        font-size: 1.3rem;
     }
 
-    #enhancementsButton{
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
+    .service-selection button {
+        font-size: 1.4rem;
+        padding: 0.4rem 0.2rem;
     }
 
-    .days{
+    .contact h3+h3{
+        font-size: 1.5rem;
+    }
+
+    .address{
         font-size: 1.2rem;
     }
-} */
 
-/* @media (min-width: 460px){
-     .carousel-square{
-        margin-top: -2.5rem;
-     }
+    iframe{
+        width: 420;
+        height: 260;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
 }
 
-@media (min-width: 538px){
-    .carousel-square{
-        margin-top: -1.5rem;
+@media (min-width: 680px){
+    .serviceRowWrapper{
+        display: flex;
+        flex-direction: row;
     }
-
-} */
+}
 
 /* 1024 ipad */
-
-/* @media (min-width: 640px) {
-    .services-expanded .container {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-    .service-item {
-      flex-direction: row;
-      align-items: center;
-    }
-    .service-item .price {
-      margin-top: 0;
-    }
-    .service-details .item {
-      flex-direction: row;
-      align-items: center;
-    }
-    .service-details .item .price {
-      margin-top: 0;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .services-expanded .container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  } */
