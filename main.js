@@ -7,16 +7,22 @@ const serviceCategories = document.querySelectorAll('.service-category');
 //hide all service categories
 function hideAllCategories(){
     serviceCategories.forEach(category => {
+       if (category.classList.contains('is-visible')){
+        category.classList.remove('is-visible');
+        setTimeout(() => {
+            category.style.display = 'none';
+        }, 500);
+       } else {
         category.style.display = 'none';
-    })
+       }        
+    });
 }
 
 function loadServices(event){
 
-    let currentActiveElement = document.querySelector('.activeService');
-
-    if (currentActiveElement){
-        currentActiveElement.classList.remove('activeService')
+    const currentActiveButton = document.querySelector('.activeService');
+    if (currentActiveButton){
+        currentActiveButton.classList.remove('activeService')
     };
     
     event.target.classList.add('activeService');
@@ -46,43 +52,33 @@ function loadServices(event){
 
 const targetCategoryElement = document.getElementById(targetCategoryId);
 if (targetCategoryElement) {
-    targetCategoryElement.style.display = 'block';
+    setTimeout(() => {
+        targetCategoryElement.style.display = 'block';
+        targetCategoryElement.offsetWidth;
+        targetCategoryElement.classList.add('is-visible');
+    }, 500)
 }
 }
 
 // This runs once the entire HTML document is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Hide all service categories by default
-    hideAllCategories();
+    serviceCategories.forEach(category => {
+        category.style.display = 'none';
+        category.classList.remove('is-visible');
+    })
 
-    // 2. Find the 'Manicures' button and its corresponding category
     const manicuresButton = document.getElementById('manicures');
     const manicureContainer = document.getElementById('manicureContainer');
 
-    // 3. If they exist, set the 'Manicures' button as active and show its container
     if (manicuresButton) {
         manicuresButton.classList.add('activeService');
     }
     if (manicureContainer) {
         manicureContainer.style.display = 'block';
+        manicureContainer.offsetWidth;
+        manicureContainer.classList.add('is-visible');
     }
 });
-
-// set initial state: Manicure category loaded
-document.addEventListener('DOMContentLoaded', (event) => {
-    hideAllCategories();
-
-   const manicuresButton = document.getElementById('manicures');
-   const manicureContainer = document.getElementById('manicureContainer');
-
-   if(manicuresButton){
-    manicuresButton.classList.add('activeService');
-   }
-
-   if(manicureContainer){
-    manicureContainer.style.display = 'block';
-   }
-})
 
 // carousel effect for welcome images 
 const rotatingImages = [
