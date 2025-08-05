@@ -73,10 +73,6 @@ button:hover{
     opacity: 1;
 }
 
-.expandedLink:hover{
-    color: rgb(187, 36, 87);
-}
-
 .welcome, .services, .visit-us{
     position: relative;
     display: flex;
@@ -174,7 +170,7 @@ button:hover{
     background-image: url(/assets/fabric-of-squares.png);
 }
 
-.services h2, .contact h2, .services-expanded h2, .contact h3+h3 {
+.services h2, .contact h2, .service-selection .activeService, .contact h3+h3, .expandedLink:hover {
     color: rgb(187, 36, 87)
 }
 
@@ -185,24 +181,6 @@ button:hover{
     font-size: 1.2rem;
     margin-top: -0.2rem;
 }
-
-/* .service-selection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0.1rem 1.8rem 1rem 2rem;
-    border-left: 2px double white;
-    margin-bottom: 1.5rem;
-    margin-top: 1rem;
-} */
-
-/* .services-left{
-    padding: 0 1rem;
-  } */
-/* 
-  .services-left {
-    padding-left: 5vw; 
-} */
 
 .services-left{
     display: flex;
@@ -236,10 +214,6 @@ button:hover{
     font-size: 1.2rem;
     color: #552611;
     padding: 0.2rem 0.2rem;
-}
-
-.service-selection .activeService{
-    color: rgb(187, 36, 87);
 }
 
 #waxingContainer{
@@ -449,14 +423,69 @@ footer p{
     margin: 0 auto;
 }
 
+@media (min-width: 380px){
+    .welcome h2, .services h2, .contact h2{
+        font-size: 3rem;
+    }
+
+    .welcome h1{
+        font-size: 2rem;
+        letter-spacing: 0.15rem;
+    }
+
+    .imgCarousel{
+        margin-top: 0.7rem; 
+        width: 15.5rem;
+        height: 15.5rem;
+    }
+
+    .carousel-square{
+        border-radius: 1.5rem;
+    }
+
+    #carouselImage{
+        left: 8.5%;
+    }
+
+    .welcome p, .contact h3, .days{
+        font-size: 1.1rem;
+    }
+
+    .expandedMobileNav a{
+        font-size: 1.2rem;
+    }
+
+    .service-selection button {
+        font-size: 1.3rem;
+    }
+
+    .contact h3+h3{
+        font-size: 1.4rem;
+    }
+
+    /* 
+
+    .address{
+        font-size: 1.2rem;
+    }
+
+    iframe{
+        width: 420;
+        height: 260;
+    }
+
+    footer{
+        font-size: 1rem;
+    } */
+}
+
 @media (min-width: 510px){
-    .welcome h2, .services h2, .services-expanded h2, .contact h2{
+    .welcome h2, .services h2, .contact h2{
         font-size: 4rem;
     }
 
     .welcome h1{
         font-size: 2.6rem;
-        letter-spacing: 0.15rem;
     }
 
     .imgCarousel{
@@ -464,19 +493,12 @@ footer p{
         height: 17rem;
         margin-top: 0.2rem;
     }
-
-    .carousel-square{
-        border-radius: 1.5rem;
-    }
     
     #carouselImage{
         top: -0.5%;
         left: 6%;
         width: 90%;
         height: 90%;
-        object-fit: cover;
-        z-index: 1;
-        border-radius: 0.8rem;
     }
 
     .welcome p, .contact h3, .days{
