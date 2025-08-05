@@ -135,3 +135,6 @@ function revertColorCloseMenu(event){
         navOpen = false;
     }, 300);
 }
+
+// get current year for footer
+document.getElementById('year').innerHTML = new Date().getFullYear();

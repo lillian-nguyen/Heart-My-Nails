@@ -25,7 +25,7 @@ header{
 }
 
 #logo{
-    width: 168;
+    width: 10rem;
 }
 
 #hamburger{
@@ -186,7 +186,7 @@ button:hover{
     margin-top: -0.2rem;
 }
 
-.service-selection{
+/* .service-selection{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,6 +194,41 @@ button:hover{
     border-left: 2px double white;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
+} */
+
+/* .services-left{
+    padding: 0 1rem;
+  } */
+/* 
+  .services-left {
+    padding-left: 5vw; 
+} */
+
+.services-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-selection-wrapper{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    margin-top: -0.5rem;
+}
+
+.service-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+
+.services-border{
+    border-right: 5px double white;
+    height: 9.3rem;
+    width: 1rem;
 }
 
 .service-selection button {
@@ -349,6 +384,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     background-image: url(/assets/pineapple-cut.png);
+    width: 100%;
     background-color: #FFEBEB
 }
 
@@ -453,7 +489,7 @@ footer p{
 
     .service-selection button {
         font-size: 1.4rem;
-        padding: 0.4rem 0.2rem;
+        /* padding: 0.4rem 0.2rem; */
     }
 
     .contact h3+h3{
@@ -474,11 +510,16 @@ footer p{
     }
 }
 
-@media (min-width: 680px){
-    .serviceRowWrapper{
-        display: flex;
+/* @media (min-width: 680px){
+    #servicesContainer{
         flex-direction: row;
     }
-}
+
+    .services-left{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+} */
 
 /* 1024 ipad */

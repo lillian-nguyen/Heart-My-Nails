@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -62,14 +63,22 @@
     <div id="services-overview" class="anchor-spacer"></div>
 
     <section class="services" id="servicesContainer">
-      <h2>Our Services</h2>
-      <div class="service-selection">
-        <button class="serviceName activeService" id="manicures">Manicures</button>
-        <button class="serviceName" id="pedicures">Pedicures</button>
-        <button class="serviceName" id="nailEnhancements">Nail Enhancements</button>
-        <button class="serviceName" id="waxingServices">Waxing Services</button>
-        <button class="serviceName" id="additionalServices">Additional Services</button>
+      <div class="services-left">
+        <h2>Our Services</h2>
+        <div class="service-selection-wrapper">
+
+          <div class="services-border"></div>
+
+          <div class="service-selection">
+            <button class="serviceName activeService" id="manicures">Manicures</button>
+            <button class="serviceName" id="pedicures">Pedicures</button>
+            <button class="serviceName" id="nailEnhancements">Nail Enhancements</button>
+            <button class="serviceName" id="waxingServices">Waxing Services</button>
+            <button class="serviceName" id="additionalServices">Additional Services</button>
+          </div>
+        </div> 
       </div>
+        
 
       <section class="services-expanded" id="allServices">
         <div class="container">
@@ -401,6 +410,7 @@
             </section>
             </div>
             </div>
+      
     </section>
 
     <div id="contact-overview" class="anchor-spacer"></div>
@@ -433,7 +443,7 @@
     </section>
 
     <footer>
-      <p>Heart My Nails © All Rights Reserved. Designed by LN.</p>
+      <p>Heart My Nails <span id="year"></span>© All Rights Reserved. Designed by LN.</p>
     </footer>
     <script type="text/javascript" src="main.js"></script>
   </body>
