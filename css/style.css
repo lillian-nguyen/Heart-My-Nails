@@ -207,7 +207,8 @@ nav ul{
     border-radius: 2rem;
     border: 2px double white;
     background-image: url(/assets/lights.png);
-    /* background-image: url(/assets/waves.png); */
+    /* background-image: url('/assets/flower.png'); */
+    background-position: 52% 28%;
 }
 
 #carouselImage{
@@ -236,7 +237,7 @@ nav ul{
     /* background-image: url(/assets/pineapple-cut.png); */
 }
 
-.welcome h1, .services h2, .contact h2, .service-selection .activeService, .hours h3, .expandedLink:hover {
+.welcome h1, .services h2, .contact h2, .service-selection .activeService, .hours h3, .expandedLink:hover, .address, .phone {
     color: rgb(187, 36, 87)
 }
 
@@ -270,7 +271,7 @@ nav ul{
 }
 
 .services-border{
-    border-right: 5px double #C39C00;
+    border-right: 5px double #d5b01c;
     height: 9.3rem;
     width: 1rem;
 }
@@ -420,7 +421,9 @@ nav ul{
     justify-content: center;
     align-items: center;
     background-image: url(/assets/pineapple-cut.png);
-    /* background-image: url(/assets/lights.png); */
+    background-image: url(/assets/lights.png);
+    background-size: cover;
+    /* background-image: url(/assets/petals.png); */
     width: 100%;
     background-color: #FFEBEB
 }
@@ -447,10 +450,6 @@ nav ul{
     font-weight:500;
 }
 
-.phone {
-    color: #C39C00;
-}
-
 .contact 
 
 .days{
@@ -468,11 +467,15 @@ nav ul{
 
 iframe{
     margin-top: 1rem;
+    /* background-color: #d5b01c; */
+    background-color: #e3c756;
+    padding: 0.2rem 0.2rem;
+    border: 2px solid white;
 }
 
 .address{
     padding-bottom: 1rem;
-    color: #C39C00;
+    font-weight: 500;
 }
 
 footer{

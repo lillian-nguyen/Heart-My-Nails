@@ -111,9 +111,11 @@ setInterval(() => {
 }, 2500);
 
 const rotatingBg = [
+    '/assets/pinkWave.png',
     '/assets/waves.png',
-    // '/assets/whitelines.png',
-    '/assets/ruffles.png'
+    // '/assets/pinkerWave.png'
+    // '/assets/whitelines.png'
+    // '/assets/petals.png',
 ];
 
 let bgIndex = 0;
