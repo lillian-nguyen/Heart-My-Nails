@@ -31,8 +31,10 @@ header{
 }
 
 #hamburger{
+    position: relative;
     scale: 0.35;
     padding-left: 3rem;
+    z-index: 5;
 }
 
 button{
@@ -183,7 +185,6 @@ nav ul{
 
 .welcome{
     background-image: url('/assets/waves.png');
-    /* background-image: url('/assets/lights.png'); */
 }
 
 .welcome p{
@@ -203,9 +204,16 @@ nav ul{
     font-family: "Cormorant Infant", serif;
     font-weight: 400;
     font-size: 2rem;
-    letter-spacing: 0.15rem;
-    /* color: #C39C00; */
+    letter-spacing: 0.1rem;
     margin-top: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end)
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 100%}
 }
 
 .imgCarousel{
@@ -298,7 +306,6 @@ nav ul{
     font-family: "Jost", sans-serif;
     font-size: 1.2rem;
     color: #552611;
-    color: white;
     padding: 0.2rem 0.2rem;
 }
 
