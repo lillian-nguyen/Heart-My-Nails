@@ -379,6 +379,7 @@ nav ul{
     padding-top: 1rem;
     margin: 0 auto;
     margin-top: -0.4rem;
+    padding-bottom: 1rem;
 }
 
 .phone, .hours h3{
@@ -538,7 +539,7 @@ footer p{
 }
 
 @media (min-width: 695px){
-    .welcome p, .contact h3, .days{
+    .welcome p, .days{
         font-size: 1.4rem;
     }
 
