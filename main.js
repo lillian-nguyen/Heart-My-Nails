@@ -93,22 +93,24 @@ const carouselImage = document.getElementById('carouselImage');
 
 // set initial img & trigger fade-in
 carouselImage.src = rotatingImages[index];
-carouselImage.classList.add('fade-in');
+// carouselImage.classList.add('fade-in');
 
 setInterval(() => {
 
-    carouselImage.classList.remove('fade-in');
+    // carouselImage.classList.remove('fade-in');
 
-    // index = (index + 1) % rotatingImages.length;
-    // carouselImage.src = rotatingImages[index];
+    index = (index + 1) % rotatingImages.length;
+    carouselImage.src = rotatingImages[index];
 
     setTimeout(() => {
         index = (index + 1) % rotatingImages.length;
         carouselImage.src = rotatingImages[index];
 
-        carouselImage.classList.add('fade-in');
+        // carouselImage.classList.add('fade-in');
     }, 1000);
 }, 4000);
+
+// background img
 
 const rotatingBg = [
     '/assets/waves.png',
