@@ -143,6 +143,16 @@ setInterval(() => {
 }, 5000);
 
 
+// mobile navigation menu - expands / contracts after clicking hamburger menu
+const hamburgerMenu = document.getElementById('hamburger');
+const expandedNav = document.getElementById('expandedNav');
+let navOpen = false;
+
+hamburgerMenu.addEventListener('click', () => {
+    navOpen = !navOpen;
+    expandedNav.classList.toggle('open', navOpen);
+})
+
 // make expanded menu links change color onclick 
 
 let expandedLinks = document.querySelectorAll('.expandedLink');

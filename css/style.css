@@ -31,8 +31,10 @@ header{
 }
 
 #hamburger{
+    position: relative;
     scale: 0.35;
     padding-left: 3rem;
+    z-index: 5;
 }
 
 button{
@@ -298,7 +300,6 @@ nav ul{
     font-family: "Jost", sans-serif;
     font-size: 1.2rem;
     color: #552611;
-    color: white;
     padding: 0.2rem 0.2rem;
 }
 
