@@ -108,40 +108,39 @@ setInterval(() => {
 
         carouselImage.classList.add('fade-in');
     }, 1000);
-}, 2500);
+}, 3000);
 
 const rotatingBg = [
-    '/assets/pinkWave.png',
     '/assets/waves.png',
-    // '/assets/pinkerWave.png'
-    // '/assets/whitelines.png'
-    // '/assets/petals.png',
+    '/assets/pinkWave.png'
 ];
 
 let bgIndex = 0;
+const welcomeBg1 = document.getElementById('welcomeBg1');
+const welcomeBg2 = document.getElementById('welcomeBg2');
+let currentImage = welcomeBg1;
+let nextImage = welcomeBg2;
 
-const welcomeBgImg = document.getElementById('welcomeBg');
-welcomeBgImg.style.backgroundImage = `url(${rotatingBg[bgIndex]})`;
+// Set the initial background images for the two elements
+welcomeBg1.style.backgroundImage = `url(${rotatingBg[0]})`;
+welcomeBg1.style.opacity = '1';
+welcomeBg2.style.opacity = '0';
 
 setInterval(() => {
-    bgIndex++;
+    // Get the next image URL from the array
+    bgIndex = (bgIndex + 1) % rotatingBg.length;
+    const nextBgUrl = rotatingBg[bgIndex];
 
-    if (bgIndex >= rotatingBg.length){
-        bgIndex = 0;
-    }
+    // Set the next image to the currently hidden element
+    nextImage.style.backgroundImage = `url(${nextBgUrl})`;
 
-    welcomeBgImg.style.backgroundImage = `url(${rotatingBg[bgIndex]})`;
-}, 5000)
+    // Toggle the opacity to create a cross-fade effect
+    currentImage.style.opacity = '0';
+    nextImage.style.opacity = '1';
 
-// mobile navigation menu - expands / contracts after clicking hamburger menu
-const hamburgerMenu = document.getElementById('hamburger');
-const expandedNav = document.getElementById('expandedNav');
-let navOpen = false;
-
-hamburgerMenu.addEventListener('click', () => {
-    navOpen = !navOpen;
-    expandedNav.classList.toggle('open', navOpen);
-})
+    // Swap the roles of the current and next images for the next interval
+    [currentImage, nextImage] = [nextImage, currentImage];
+}, 5000);
 
 
 // make expanded menu links change color onclick 
