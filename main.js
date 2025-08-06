@@ -80,36 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// carousel effect for welcome images 
-const rotatingImages = [
-    '/assets/nailsBehindHead.jpg',
-    '/assets/blueDressNails.jpg',
-    '/assets/mauveNails.jpg',
-    '/assets/salmonbg.jpg'
-];
-
-let index = 0;
-const carouselImage = document.getElementById('carouselImage');
-
-// set initial img & trigger fade-in
-carouselImage.src = rotatingImages[index];
-carouselImage.classList.add('fade-in');
-
-setInterval(() => {
-
-    carouselImage.classList.remove('fade-in');
-
-    // index = (index + 1) % rotatingImages.length;
-    // carouselImage.src = rotatingImages[index];
-
-    setTimeout(() => {
-        index = (index + 1) % rotatingImages.length;
-        carouselImage.src = rotatingImages[index];
-
-        carouselImage.classList.add('fade-in');
-    }, 1000);
-}, 4000);
-
 const rotatingBg = [
     '/assets/waves.png',
     '/assets/pinkWave.png'
