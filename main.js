@@ -110,6 +110,27 @@ setInterval(() => {
     }, 1000);
 }, 2500);
 
+const rotatingBg = [
+    '/assets/waves.png',
+    // '/assets/whitelines.png',
+    '/assets/ruffles.png'
+];
+
+let bgIndex = 0;
+
+const welcomeBgImg = document.getElementById('welcomeBg');
+welcomeBgImg.style.backgroundImage = `url(${rotatingBg[bgIndex]})`;
+
+setInterval(() => {
+    bgIndex++;
+
+    if (bgIndex >= rotatingBg.length){
+        bgIndex = 0;
+    }
+
+    welcomeBgImg.style.backgroundImage = `url(${rotatingBg[bgIndex]})`;
+}, 5000)
+
 // mobile navigation menu - expands / contracts after clicking hamburger menu
 const hamburgerMenu = document.getElementById('hamburger');
 const expandedNav = document.getElementById('expandedNav');
