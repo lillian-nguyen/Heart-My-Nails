@@ -420,10 +420,11 @@ nav ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/pineapple-cut.png);
-    background-image: url(/assets/lights.png);
+    /* background-image: url(/assets/pineapple-cut.png); */
+    /* background-image: url(/assets/lights.png); */
+    background-image: url(/assets/pinkWave.png);
     background-size: cover;
-    /* background-image: url(/assets/petals.png); */
+    background-position: 15%;
     width: 100%;
     background-color: #FFEBEB
 }
