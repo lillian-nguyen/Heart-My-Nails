@@ -108,7 +108,7 @@ setInterval(() => {
 
         carouselImage.classList.add('fade-in');
     }, 1000);
-}, 3000);
+}, 4000);
 
 const rotatingBg = [
     '/assets/waves.png',
