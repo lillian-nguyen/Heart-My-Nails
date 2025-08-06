@@ -55,7 +55,7 @@ button:hover{
     height: 10rem;
 }
 
-.expandedMobileNav a {
+.expandedMobileNav a, nav ul li a {
     padding-bottom: 1rem;
     font-family: "Jost", sans-serif;
     color: white;
@@ -71,6 +71,13 @@ button:hover{
 #expandedNav.open{
     visibility: visible;
     opacity: 1;
+}
+
+nav ul{
+    display: none;
+    /* display: flex;
+    list-style: none;
+    justify-content: space-evenly; */
 }
 
 .welcome, .services, .visit-us{
@@ -170,7 +177,7 @@ button:hover{
     background-image: url(/assets/fabric-of-squares.png);
 }
 
-.services h2, .contact h2, .service-selection .activeService, .contact h3+h3, .expandedLink:hover {
+.services h2, .contact h2, .service-selection .activeService, .hours h3, .expandedLink:hover {
     color: rgb(187, 36, 87)
 }
 
@@ -224,11 +231,6 @@ button:hover{
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1rem;
-}
-
-.services-expanded h2{
-    text-align: center;
-    padding-bottom: 1rem;
 }
 
 .services-grid{
@@ -371,14 +373,15 @@ button:hover{
     text-align: center;
 }
 
-.contact h3+h3{
+.hours h3{
     font-family: "Cormorant Infant", serif;
     font-size: 1.3rem;
     padding-top: 1rem;
+    margin: 0 auto;
     margin-top: -0.4rem;
 }
 
-.phone, .contact h3+h3{
+.phone, .hours h3{
     font-weight:500;
 }
 
@@ -407,6 +410,7 @@ iframe{
 
 .address{
     padding-bottom: 1rem;
+    color: #C39C00;
 }
 
 footer{
@@ -459,24 +463,14 @@ footer p{
         font-size: 1.3rem;
     }
 
-    .contact h3+h3{
+    .hours h3{
         font-size: 1.4rem;
     }
 
-    /* 
-
-    .address{
-        font-size: 1.2rem;
-    }
-
     iframe{
-        width: 420;
-        height: 260;
+        width: 20rem;
     }
 
-    footer{
-        font-size: 1rem;
-    } */
 }
 
 @media (min-width: 510px){
@@ -511,10 +505,17 @@ footer p{
 
     .service-selection button {
         font-size: 1.4rem;
-        /* padding: 0.4rem 0.2rem; */
     }
 
-    .contact h3+h3{
+    .service-selection-wrapper{
+        gap: 1.4rem;
+    }
+
+    .contact h2{
+        margin-top: 2rem;
+    }
+
+    .hours h3{
         font-size: 1.5rem;
     }
 
@@ -523,25 +524,256 @@ footer p{
     }
 
     iframe{
-        width: 420;
-        height: 260;
+        width: 25rem;
+        height: 15rem;
     }
 
     footer{
         font-size: 1rem;
     }
+
+    .address{
+        padding-bottom: 1.5rem;
+    }
 }
 
-/* @media (min-width: 680px){
-    #servicesContainer{
-        flex-direction: row;
+@media (min-width: 695px){
+    .welcome p, .contact h3, .days{
+        font-size: 1.4rem;
+    }
+
+    .welcome p {
+        width: 80%;
+    }
+
+    .service-selection button {
+        font-size: 1.5rem;
+    }
+
+    .service-selection {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .services-border{
+        height: 11.5rem;
+    }
+
+    .service-selection-wrapper{
+        gap: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .expandedMobileNav a{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 786px){
+    header{
+        justify-content: flex-start;
+    }
+    
+    #hamburger{
+        display: none;
+    }
+
+    nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 10%;
+    width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 852px){
+    .welcome p, .contact h3, .days{
+        font-size: 1.55rem;
+    }
+
+    .welcome p {
+        width: 75%;
+    }
+
+    .welcome h1{
+        font-size: 2.8rem;
+    }
+
+    .service-selection button {
+        font-size: 1.6rem;
+    }
+
+    .service-category h3{
+        font-size: 1.8rem;
+    }
+
+    .service-item h4{
+        font-size: 1.4rem;
+    }
+
+    .service-item p{
+        font-size: 1.2rem;
+        margin-top: 0.25rem;
+    }
+    
+    .service-item .price {
+        font-size: 1.4rem;
+    }
+
+    .basicManiDesc{
+        width: 80%;
+    }
+
+    .hours h3{
+        font-size: 1.8rem;
+        margin-bottom: 2.3rem
+    }
+
+    .address{
+        font-size: 1.3rem;
+    }
+
+    nav ul li a {
+        font-size: 1.3rem;
+    }
+
+    .services-expanded .container{
+        max-width: 580px;
+    }
+}
+
+@media (min-width: 1005px){
+    nav ul{
+        margin-left: 18%;
+        }
+        
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    .welcome{
+        height: 94vh;
+        margin-top: 3rem;
+    }
+
+    .welcome p, .contact h3, .days{
+        font-size: 1.7rem;
+    }
+
+    .welcome p {
+        width: 82%;
+    }
+
+    .welcome p+p{
+        padding-top: 1rem;
+    }
+
+    .wecome h2{
+        padding-top: 5rem;
+    }
+
+    .welcome h1{
+        font-size: 3rem;
+    }
+    
+    .welcome-row{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        padding: 1rem 4rem 0 10rem;
+        margin-bottom: 5rem;
+    }
+
+    .welcome-description{
+        width: 95%;
+        text-align: left;
+        margin-top: -1.9rem;
+        margin-left: -0.3rem;
+    }
+
+    .welcome p+p{
+        padding-bottom: 0;
+    }
+
+    .imgCarousel{
+        width: 29rem;
+        height: 20rem;
+    }
+    
+    #carouselImage{
+        top: 0.8%;
+        left: 6%;
+        width: 90%;
+        height: 90%;
+    }
+
+    .services{
+        padding-top: 3rem;
     }
 
     .services-left{
-        display: flex;
-        flex-direction: column;
-        width: 45%;
+        position: absolute;
+        z-index: 12;
+        top: 12rem;
+        left: 3rem;
     }
-} */
 
-/* 1024 ipad */
+    .services h2 {
+        margin-top: 0;
+    }
+
+    .services-expanded .container{
+        max-width: 950px;
+        margin-left: 35%;
+        padding-bottom: 2.5rem;
+    }
+
+    .services-expanded{
+        width: 76%;
+    }
+
+    #contact-overview {
+        top: -80px; 
+    }
+
+    .hours{
+        margin-top: -8rem;
+    }
+
+    .hours h3{
+        font-size: 1.9rem;
+        margin: 0 auto;
+        padding-bottom: 0.5rem;
+    }
+
+    .hoursAndLocation{
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        width: 88%;
+    }
+
+    .address{
+        font-size: 1.5rem;
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        margin-top: -0.7rem;
+    }
+
+    iframe{
+        width: 26rem;
+        height: 16rem;
+        padding: 0.3rem 0.3rem;
+        background-color: white;
+    }
+
+    footer{
+        font-size: 1.1rem;
+    }
+}

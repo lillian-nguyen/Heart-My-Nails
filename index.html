@@ -22,6 +22,13 @@
         <img src="/assets/hmn-logo.png" id="logo" alt="heart my nails logo"
       /></a>
 
+      <nav>
+        <ul>
+          <li><a href="#services-overview">OUR SERVICES</a></li>
+          <li><a href="#contact-overview">APPOINTMENT/LOCATION INFO</a></li>
+        </ul>
+      </nav>
+
       <button id="hamburger">
         <img src="/assets/hamburger-menu.png" alt="hamburger menu" />
       </button>
@@ -40,24 +47,28 @@
       <h2>Welcome to</h2>
       <h1>HEART MY NAILS</h1>
 
-      <section class="imgCarousel">
-        <div class="carousel-square"></div>
-        <img
-          id="carouselImage"
-          src="/assets/nailsBehindHead.jpg"
-          class="welcomeImg fade"
-          alt="hand with painted nails wrapped behind a person's head"
-        />
-      </section>
+      <div class="welcome-row">
+        <section class="imgCarousel">
+          <div class="carousel-square"></div>
+          <img
+            id="carouselImage"
+            src="/assets/nailsBehindHead.jpg"
+            class="welcomeImg fade"
+            alt="hand with painted nails wrapped behind a person's head"
+          />
+        </section>
 
-      <p class="welcome-p1">
-        Our focus is simple: Deliver expert nail care to help you feel your
-        best.
-      </p>
-      <p>
-        Whether it's for routine maintenance or a well-deserved treat, our goal
-        is to have you leave feeling polished, relaxed, and confident.
-      </p>
+        <div class="welcome-description">
+          <p class="welcome-p1">
+            Our focus is simple: Deliver expert nail care to help you feel your
+            best.
+          </p>
+          <p>
+            Whether it's for routine maintenance or a well-deserved treat, our
+            goal is to have you leave feeling polished, relaxed, and confident.
+          </p>
+        </div>
+      </div>
     </section>
 
     <div id="services-overview" class="anchor-spacer"></div>
@@ -66,24 +77,33 @@
       <div class="services-left">
         <h2>Our Services</h2>
         <div class="service-selection-wrapper">
-
           <div class="services-border"></div>
 
           <div class="service-selection">
-            <button class="serviceName activeService" id="manicures">Manicures</button>
+            <button class="serviceName activeService" id="manicures">
+              Manicures
+            </button>
             <button class="serviceName" id="pedicures">Pedicures</button>
-            <button class="serviceName" id="nailEnhancements">Nail Enhancements</button>
-            <button class="serviceName" id="waxingServices">Waxing Services</button>
-            <button class="serviceName" id="additionalServices">Additional Services</button>
+            <button class="serviceName" id="nailEnhancements">
+              Nail Enhancements
+            </button>
+            <button class="serviceName" id="waxingServices">
+              Waxing Services
+            </button>
+            <button class="serviceName" id="additionalServices">
+              Additional Services
+            </button>
           </div>
-        </div> 
+        </div>
       </div>
-        
 
       <section class="services-expanded" id="allServices">
         <div class="container">
           <div class="services-grid">
-            <section id="manicureContainer" class="service-category activeCategory">
+            <section
+              id="manicureContainer"
+              class="service-category activeCategory"
+            >
               <h3>Manicures</h3>
               <ul class="service-list">
                 <li class="service-item">
@@ -92,7 +112,7 @@
                       <h4>Basic Manicure</h4>
                       <span class="price">$25</span>
                     </div>
-                    <p>
+                    <p class="basicManiDesc">
                       Luxury lotion hand massage, Hot towel hand wrap, Nail
                       shaping, Cuticle Care, Color polish
                     </p>
@@ -134,7 +154,7 @@
 
             <section id="enhancementsContainer" class="service-category">
               <h3>Nail Enhancements</h3>
-  
+
               <ul class="service-list">
                 <li class="service-item">
                   <div class="service-details">
@@ -161,7 +181,7 @@
                     </div>
                   </div>
                 </li>
-  
+
                 <li class="service-item">
                   <div class="service-details">
                     <h4>Solar Pink & White</h4>
@@ -187,7 +207,7 @@
                   <div class="service-details">
                     <div class="same-line">
                       <h4>Dip</h4>
-                    <span class="price">$50+</span>
+                      <span class="price">$50+</span>
                     </div>
                     <div class="service-details-subitem">
                       <p>W/ Tip</p>
@@ -284,7 +304,7 @@
                 </li>
               </ul>
             </section>
-  
+
             <section id="additionalContainer" class="service-category">
               <h3>Additional Services</h3>
               <ul class="service-list">
@@ -354,7 +374,7 @@
                 </li>
               </ul>
             </section>
-  
+
             <section id="waxingContainer" class="service-category">
               <h3>Waxing Services</h3>
               <ul class="service-list">
@@ -408,42 +428,54 @@
                 </li>
               </ul>
             </section>
-            </div>
-            </div>
-      
+          </div>
+        </div>
+      </section>
     </section>
 
     <div id="contact-overview" class="anchor-spacer"></div>
 
     <section class="contact" id="contactUs">
       <h2>Come Visit Us</h2>
-      <h3>Walk-in or call us at <span class="phone">(504) 347-1100</span> to schedule an appointment. We look forward to seeing you!</h3>
+      <h3>
+        Walk-in or call us at <span class="phone">(504) 347-1100</span> to
+        schedule an appointment. We look forward to seeing you!
+      </h3>
 
-      <h3>BUSINESS HOURS</h3>
-      <div class="days">
-        <p>Mon - Thurs: 9:30am - 6:30pm</p>
-        <p>Fri - Sat: 9am - 6:30pm</p>
-        <p>Sun: closed</p>
-      </div>
+      <div class="hoursAndLocation">
+        <div class="hours">
+          <h3>BUSINESS HOURS</h3>
+          <div class="days">
+            <p>Mon - Thurs: 9:30am - 6:30pm</p>
+            <p>Fri - Sat: 9am - 6:30pm</p>
+            <p>Sun: closed</p>
+          </div>
+        </div>
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.0978571908436!2d-90.10184432363455!3d29.86145157501612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a39686c32fcd%3A0xe620bd27cb918bd7!2sHeart%20My%20Nails!5e0!3m2!1sen!2sus!4v1752639086615!5m2!1sen!2sus"
-        width="280"
-        height="200"
-        style="border: 3px solid white"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+        <div class="mapAndAddress">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.0978571908436!2d-90.10184432363455!3d29.86145157501612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a39686c32fcd%3A0xe620bd27cb918bd7!2sHeart%20My%20Nails!5e0!3m2!1sen!2sus!4v1752639086615!5m2!1sen!2sus"
+            width="280"
+            height="200"
+            style="border: 3px solid white"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
 
-      <div class="address">
-        <p>2324 Barataria Blvd Ste 8</p>
-        <p>Marrero, LA 70072</p>
+          <div class="address">
+            <p>2324 Barataria Blvd Ste 8</p>
+            <p>Marrero, LA 70072</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer>
-      <p>© <span id="year"></span> Heart My Nails. All Rights Reserved. Designed by LN.</p>
+      <p>
+        © <span id="year"></span> Heart My Nails. All Rights Reserved. Designed
+        by LN.
+      </p>
     </footer>
     <script type="text/javascript" src="main.js"></script>
   </body>
