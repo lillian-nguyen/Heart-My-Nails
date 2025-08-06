@@ -99,12 +99,31 @@ nav ul{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/assets/lights.png');
-    /* background-image: url('/assets/waves.png'); */
     background-size: cover;
     background-position: center;
 
+    transition: opacity 1.5s ease-in-out;
     animation: subtleZoom 10s infinite alternate ease-in-out;
+}
+
+/* @keyframes fade-in-out{
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+} */
+
+#welcomeBg1 {
+    opacity: 1;
+}
+
+#welcomeBg2 {
+    opacity: 0;
 }
 
 @keyframes subtleZoom {
@@ -200,25 +219,25 @@ nav ul{
 .carousel-square{
     position: absolute;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 97%;
+    height: 97%;
     margin-top: -1rem;
     background-color: #E8CDCC;
-    border-radius: 2rem;
-    border: 2px double white;
+    border-radius: 1.2rem;
+    border: 2px double rgb(233, 227, 227);
     background-image: url(/assets/lights.png);
     /* background-image: url('/assets/flower.png'); */
-    background-position: 52% 28%;
+    background-position: 52% 38%;
 }
 
 #carouselImage{
     opacity: 0;
     transition: opacity 1s ease-in-out;
     position: absolute;
-    top: 0.8%;
-    left: 8%;
-    width: 87%;
-    height: 87%;
+    top: -0.9%;
+    left: 5.5%;
+    width: 88%;
+    height: 88%;
     object-fit: cover;
     z-index: 1;
     border-radius: 0.8rem;
@@ -234,7 +253,6 @@ nav ul{
     margin-top: -2rem;
     background-color: #F6D2D1;
     background-image: url(/assets/fabric-of-squares.png);
-    /* background-image: url(/assets/pineapple-cut.png); */
 }
 
 .welcome h1, .services h2, .contact h2, .service-selection .activeService, .hours h3, .expandedLink:hover, .address, .phone {
