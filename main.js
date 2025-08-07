@@ -1,3 +1,20 @@
+const closeIcon = document.querySelectorAll('.ph');
+closeIcon.forEach(arrow => arrow.addEventListener('click', shiftTestimonials))
+
+const testimonials = document.querySelectorAll('.testimonial-card')
+
+function shiftTestimonials(event){
+    let currentReview = document.querySelector('.activeReview');
+    let nextReview = currentReview.nextElementSibling;
+
+    if (currentReview == document.getElementById('review4')){
+        nextReview = document.getElementById('review1');
+    }
+
+    currentReview.classList.remove('activeReview');
+    nextReview.classList.add('activeReview');
+}
+
 // make serviceName colors change onclick (for active class)
 const serviceButtons = document.querySelectorAll('.serviceName');
 serviceButtons.forEach(button => button.addEventListener('click', loadServices))
@@ -19,7 +36,7 @@ function hideAllCategories(){
 }
 
 function loadServices(event){
-
+    // activeService = dark pink color 
     const currentActiveButton = document.querySelector('.activeService');
     if (currentActiveButton){
         currentActiveButton.classList.remove('activeService')
@@ -47,7 +64,7 @@ function loadServices(event){
             targetCategoryId = 'additionalContainer';
             break;
         default:
-            console.warn('Clicked button has an unhandled ID:')    
+            console.warn('Clicked button has an unknown ID:')    
 }
 
 const targetCategoryElement = document.getElementById(targetCategoryId);
@@ -77,6 +94,15 @@ document.addEventListener('DOMContentLoaded', () => {
         manicureContainer.style.display = 'block';
         manicureContainer.offsetWidth;
         manicureContainer.classList.add('is-visible');
+    }
+
+    testimonials.forEach(testimonial => {
+        testimonial.classList.remove('activeReview');
+    })
+
+    const firstReview = document.getElementById('review1');
+    if (firstReview){
+        firstReview.classList.add('activeReview');
     }
 });
 
