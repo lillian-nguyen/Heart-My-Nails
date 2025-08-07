@@ -1,18 +1,42 @@
-const closeIcon = document.querySelectorAll('.ph');
-closeIcon.forEach(arrow => arrow.addEventListener('click', shiftTestimonials))
+const closeIcon = document.querySelectorAll('.ph-plus-circle');
+closeIcon.forEach(arrow => arrow.addEventListener('click', nextTestimonial));
+radioButtons = document.querySelectorAll('input')
+radioButtons.forEach(button => button.addEventListener('click', jumpTestimonials))
 
 const testimonials = document.querySelectorAll('.testimonial-card')
 
-function shiftTestimonials(event){
+function nextTestimonial(event){
     let currentReview = document.querySelector('.activeReview');
     let nextReview = currentReview.nextElementSibling;
 
-    if (currentReview == document.getElementById('review4')){
+    if (!nextReview){
         nextReview = document.getElementById('review1');
     }
 
     currentReview.classList.remove('activeReview');
     nextReview.classList.add('activeReview');
+
+    const nextReviewNumber = nextReview.id.replace('review', ''); // 'review1' -> '1'
+    const nextRadio = document.getElementById(`input${nextReviewNumber}`); // 'input1'
+
+    // Update review cards
+    currentReview.classList.remove('activeReview');
+    nextReview.classList.add('activeReview');
+
+    nextRadio.checked = true;
+}
+
+function jumpTestimonials(event){
+    // Find and deactivate the currently active review
+    const currentReview = document.querySelector('.activeReview');
+    currentReview.classList.remove('activeReview');
+
+    // Get the number from the clicked radio button's ID
+    const reviewNumber = event.target.id.replace('input', '');
+
+    // Find and make corresponding review active
+    const targetReview = document.getElementById(`review${reviewNumber}`);
+    targetReview.classList.add('activeReview');
 }
 
 // make serviceName colors change onclick (for active class)
@@ -21,7 +45,6 @@ serviceButtons.forEach(button => button.addEventListener('click', loadServices))
 
 const serviceCategories = document.querySelectorAll('.service-category');
 
-//hide all service categories
 function hideAllCategories(){
     serviceCategories.forEach(category => {
        if (category.classList.contains('is-visible')){
@@ -103,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const firstReview = document.getElementById('review1');
     if (firstReview){
         firstReview.classList.add('activeReview');
+        document.getElementById('input1').checked = true;
     }
 });
 
