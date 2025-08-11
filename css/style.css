@@ -81,13 +81,10 @@ nav ul{
 }
 
 .hero{
-    /* margin: 0 auto; */
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 6rem; */
     text-align: center;
     background-color: #E8CDCC;
 }
@@ -117,7 +114,6 @@ nav ul{
     border-radius: 50%;
     position: relative;
     clip-path: circle(49.5%);
-    /* to avoid a few glitch caused by overflow: hidden */
     margin: 0 auto;
     top: -3rem;
   }
@@ -276,10 +272,6 @@ nav ul{
 
 .welcome p > span{
     color: rgb(187, 36, 87)
-}
-
-.welcome p+p{
-    margin-top: 1rem;
 }
 
 .welcome h1{
@@ -533,10 +525,10 @@ nav ul{
 }
 
 .service-item p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #6b7280;
     font-style: italic;
-    margin-top: 0.25rem;
+    margin: 0.4rem;
 }
 
 .service-item .price {
@@ -550,9 +542,14 @@ nav ul{
     text-align: left;
 }
 
+.same-line p{
+    margin-top: 0;
+}
+
 .same-line{
     display: flex;
     justify-content: space-between;
+    /* align-items: flex-end; */
 }
 
 .service-details .service-details-subitem {
@@ -561,7 +558,7 @@ nav ul{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-  }
+}
 
 .service-details.item {
     display: flex;
@@ -702,11 +699,15 @@ footer p{
     }
 
     .welcome p, .contact h3, .days{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .expandedMobileNav a{
         font-size: 1.2rem;
+    }
+
+    .testimonials-header h4{
+        font-size: 1.8rem;
     }
 
     .service-selection button {
@@ -745,8 +746,27 @@ footer p{
         height: 90%;
     }
 
-    .welcome p, .contact h3, .days{
+    .welcome p, .contact h3, .days, .aboutUs p{
         font-size: 1.3rem;
+    }
+
+    .testimonial-card p{
+        font-size: 1.2rem;
+    }
+
+    .testimonial-card {
+        max-width: 15rem;
+        min-height: 17rem;
+    }
+
+    .testimonial-card h5{
+        font-size: 1.4rem;
+    }
+
+    .ph{
+        font-size: 2.2rem;
+        top: -0.8rem;
+        right: -6.8rem;
     }
 
     .expandedMobileNav a{
@@ -759,6 +779,11 @@ footer p{
 
     .service-selection-wrapper{
         gap: 1.4rem;
+    }
+
+    .service-item p{
+        font-size: 1.2rem;
+        margin: 0.5rem;
     }
 
     .contact h2{
@@ -788,8 +813,21 @@ footer p{
 }
 
 @media (min-width: 695px){
-    .welcome p, .days{
+    .welcome p, .contact h3, .days, .aboutUs p{
         font-size: 1.4rem;
+    }
+
+    .testimonial-card p{
+        font-size: 1.3rem;
+    }
+
+    .testimonial-card {
+        max-width: 17rem;
+        min-height: 19rem;
+    }
+
+    .testimonial-card h5{
+        font-size: 1.5rem;
     }
 
     .welcome p {
@@ -869,7 +907,7 @@ footer p{
 
     .service-item p{
         font-size: 1.2rem;
-        margin-top: 0.25rem;
+        margin: 0.2rem;
     }
     
     .service-item .price {
