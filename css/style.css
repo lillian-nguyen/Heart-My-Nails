@@ -409,7 +409,7 @@ nav ul{
     margin-left: 0.5rem;
   }
 
-/* services revamp */
+/* services section */
 
 .services {
     margin-top: -2rem;
@@ -549,7 +549,6 @@ nav ul{
 .same-line{
     display: flex;
     justify-content: space-between;
-    /* align-items: flex-end; */
 }
 
 .service-details .service-details-subitem {
@@ -633,8 +632,6 @@ nav ul{
     font-weight:500;
 }
 
-.contact 
-
 .days{
     margin-top: -1.8rem;
     padding-bottom: 0.3rem;
@@ -675,7 +672,7 @@ footer p{
 }
 
 @media (min-width: 380px){
-    .welcome h2, .services h2, .contact h2{
+    .welcome h2, .services h2, .contact h2, .aboutUs h2{
         font-size: 3rem;
     }
 
@@ -725,7 +722,7 @@ footer p{
 }
 
 @media (min-width: 510px){
-    .welcome h2, .services h2, .contact h2{
+    .welcome h2, .services h2, .contact h2, .aboutUs h2{
         font-size: 4rem;
     }
 
@@ -748,6 +745,10 @@ footer p{
 
     .welcome p, .contact h3, .days, .aboutUs p{
         font-size: 1.3rem;
+    }
+
+    .gallery {
+        --s: 260px;
     }
 
     .testimonial-card p{
@@ -817,6 +818,10 @@ footer p{
         font-size: 1.4rem;
     }
 
+    .gallery {
+        --s: 280px;
+    }
+
     .testimonial-card p{
         font-size: 1.3rem;
     }
@@ -838,13 +843,25 @@ footer p{
         font-size: 1.5rem;
     }
 
+    .service-category h3{
+        font-size: 1.6rem;
+    }
+
+    .service-item h4{
+        font-size: 1.3rem;
+    }
+
+    .service-item p, .service-item .price{
+        font-size: 1.3rem;
+    }
+
     .service-selection {
         padding-bottom: 0;
         padding-top: 0;
     }
 
     .services-border{
-        height: 11.5rem;
+        height: 11.8rem;
     }
 
     .service-selection-wrapper{
@@ -852,6 +869,10 @@ footer p{
         margin-top: 0.5rem;
         margin-bottom: 2rem;
     }
+
+    /* .service-details, .service-details-subitem{
+        gap: 0.1rem;
+    } */
 
     .expandedMobileNav a{
         font-size: 1.5rem;
@@ -871,12 +892,32 @@ footer p{
     display: flex;
     list-style: none;
     justify-content: space-between;
-    margin-left: 10%;
+    margin-left: -2%;
     width: 100%;
     }
 
     nav ul li a {
         font-size: 1.25rem;
+    }
+
+    .gallery {
+        --s: 300px;
+    }
+
+    .testimonial-card p{
+        font-size: 1.2rem;
+    }
+
+    .welcome p, .contact h3, .days, .aboutUs p{
+        font-size: 1.6rem;
+    }
+
+    .welcome h2, .services h2, .contact h2, .aboutUs h2{
+        font-size: 4.8rem;
+    }
+
+    .welcome h1{
+        font-size: 2.8rem;
     }
 }
 
