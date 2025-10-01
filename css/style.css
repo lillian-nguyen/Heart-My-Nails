@@ -262,7 +262,8 @@ nav ul{
 
 .welcome p{
     position: relative;
-    font-family: "Jost", sans-serif;
+    /* font-family: "Jost", sans-serif; */
+    font-family: "Lora", serif;
     letter-spacing: 0.01rem;
     width: 85%;
     margin: 0.5rem auto;
@@ -300,7 +301,8 @@ nav ul{
 }
 
 .aboutUs p{
-    font-family: "Jost", sans-serif;
+    /* font-family: "Jost", sans-serif; */
+    font-family: "Lora", serif;
     font-size: 1.2rem;
     color: #552611;
     width: 80%;
@@ -457,7 +459,7 @@ nav ul{
 }
 
 .service-selection button {
-    font-family: "Jost", sans-serif;
+    font-family: "Lora", serif;
     font-size: 1.2rem;
     color: #552611;
     padding: 0.2rem 0.2rem;
@@ -615,7 +617,7 @@ nav ul{
 }
 
 .contact h3, .contact p{
-    font-family: "Jost", sans-serif;
+    font-family: "Lora", serif;
     text-align: center;
 }
 
